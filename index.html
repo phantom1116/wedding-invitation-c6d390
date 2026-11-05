@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Edit these to match your invitation (used for the browser tab and WhatsApp/social share previews) -->
+<title>Aanya &amp; Kabir — Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding celebrations of Aanya &amp; Kabir — 18th &amp; 21st November 2026.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aanya &amp; Kabir — Wedding Invitation">
+<meta property="og:description" content="You are warmly invited to the wedding celebrations of Aanya &amp; Kabir — 18th &amp; 21st November 2026.">
+<meta property="og:image" content="/.netlify/images?url=/img/hero.png&w=1200&h=630&fit=cover&fm=jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7e8d4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alice&family=Noto+Serif+Devanagari:wght@500&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="fx sky" aria-hidden="true"></div>
+<div class="fx glow" aria-hidden="true"></div>
+
+<!-- Hanging toran with bells -->
+<div class="toran" id="toran" aria-hidden="false">
+  <svg class="garland" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 4 Q100 56 200 8 Q300 56 400 4" fill="none" stroke="#e8902a" stroke-width="11" stroke-linecap="round" stroke-dasharray="0.1 12"/>
+    <path d="M0 4 Q100 56 200 8 Q300 56 400 4" fill="none" stroke="#f4b63c" stroke-width="7" stroke-linecap="round" stroke-dasharray="0.1 12" stroke-dashoffset="6"/>
+  </svg>
+  <button class="bell" type="button" aria-label="Ring the bell" data-f="440" style="left:12%;--len:70px;--d:3.6s;--dl:-.4s"></button>
+  <button class="bell sm" type="button" aria-label="Ring the bell" data-f="760" style="left:31%;--len:44px;--d:4.1s;--dl:-1.3s"></button>
+  <button class="bell sm" type="button" aria-label="Ring the bell" data-f="760" style="left:69%;--len:44px;--d:3.9s;--dl:-2.4s"></button>
+  <button class="bell" type="button" aria-label="Ring the bell" data-f="440" style="left:88%;--len:70px;--d:3.7s;--dl:-1.8s"></button>
+</div>
+
+<header class="title" id="title">
+  <b data-bind="bride.name"></b><i>weds</i><b data-bind="groom.name"></b>
+  <em class="tag" data-bind="hashtag"></em>
+</header>
+<div class="hint" id="hint">Scroll</div>
+
+<main id="app"></main>
+
+<button class="mus" id="mus" type="button" aria-label="Turn music on" aria-pressed="false" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3" class="sp"/><circle cx="18" cy="16" r="3" class="sp"/><path class="x" d="M2 2l20 20"/></svg>
+</button>
+
+<script src="/invitation.config.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
